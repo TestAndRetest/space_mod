@@ -1,6 +1,6 @@
-package net.examplemod.fabric;
+package net.space_mod.fabric;
 
-import net.examplemod.ExampleExpectPlatform;
+import net.space_mod.ExampleExpectPlatform;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.nio.file.Path;

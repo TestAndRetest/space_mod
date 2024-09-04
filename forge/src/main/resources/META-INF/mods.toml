@@ -4,30 +4,30 @@ loaderVersion = "[47,)"
 license = "Insert License Here"
 
 [[mods]]
-modId = "examplemod"
+modId = "space_mod"
 version = "${version}"
-displayName = "Example Mod"
+displayName = "Space Mod"
 authors = "Me!"
 description = '''
 This is an example description! Tell everyone what your mod is about!
 '''
 #logoFile = ""
 
-[[dependencies.examplemod]]
+[[dependencies.space_mod]]
 modId = "forge"
 mandatory = true
 versionRange = "[47,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.space_mod]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.20.1,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.space_mod]]
 modId = "architectury"
 mandatory = true
 versionRange = "[9.1.12,)"

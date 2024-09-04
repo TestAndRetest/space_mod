@@ -19,8 +19,58 @@ subprojects {
     }
 
 
-    //copied from vs-addition
+
     repositories {
+        //for typetools-0.6.3.jar
+        maven {
+            url "https://github.com/jhalterman/typetools/"
+        }
+        mavenCentral()
+        //for mixin-0.8.5-processor.jar
+        maven {
+            url "https://nexus.velocitypowered.com/repository/maven-public/"
+        }
+        //for mixinsquared-common
+        //maven { url = "https://maven.bawnorton.com/releases" }
+        maven {
+            name "bawnorton"
+            url "https://maven.bawnorton.com/releases"
+        }
+
+
+        //below is copied from vs-addition
+        maven { url = "https://maven.architectury.dev/" }
+        maven { // Ritchie's Projectile Library
+            url = "https://maven.realrobotix.me/master/"
+            content {
+                includeGroup("com.rbasamoyai") // THIS IS IMPORTANT
+            }
+        }
+        maven {
+            name = "ParchmentMC"
+            url = "https://maven.parchmentmc.org"
+        }
+        maven { url = "https://maven.terraformersmc.com/releases/" } // Mod Menu
+        maven {
+            name = 'Kotlin for Forge'
+            url = 'https://thedarkcolour.github.io/KotlinForForge/'
+        }
+        maven {
+            url "https://maven.saps.dev/minecraft"
+            content {
+                includeGroup("dev.latvian.mods")
+                includeGroup("dev.ftb.mods")
+            }
+        }
+
+
+        maven {
+            url = "https://api.modrinth.com/maven"
+            content {
+                includeGroup("maven.modrinth")
+            }
+        }
+
 
     }
 
@@ -32,6 +82,10 @@ subprojects {
         mappings loom.officialMojangMappings()
         // The following line declares the yarn mappings you may select this one as well.
         // mappings "net.fabricmc:yarn:1.20.1+build.10:v2"
+
+        //copied from vs-addition
+//        implementation("org.joml:joml:1.10.4") { transitive = false }
+//        implementation("org.joml:joml-primitives:1.10.0") { transitive = false }
     }
 }
 
@@ -49,6 +103,7 @@ allprojects {
 
     repositories {
         mavenLocal()
+        //copied from vs-addition
         maven {
             name = 'Kotlin for Forge'
             url = 'https://thedarkcolour.github.io/KotlinForForge/'

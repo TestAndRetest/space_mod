@@ -1,4 +1,4 @@
-package net.examplemod;
+package net.space_mod;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 import dev.architectury.platform.Platform;
